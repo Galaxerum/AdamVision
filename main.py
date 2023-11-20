@@ -39,8 +39,9 @@ def camera_vission():
         for (x, y, w, h) in faces:
             cv2.rectangle(frame, (x, y), (x+w, y+h), (255, 0, 0), 3)
 
-        cv2.imshow('Frame', frame)
         deviation(faces, frame)
+        cv2.imshow('Frame', frame)
+        
 
         if cv2.waitKey(1) & 0xFF == ord('q'):
             camera.release()
