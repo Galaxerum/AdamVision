@@ -34,7 +34,7 @@ def deviation(faces, frame):
         cv2.putText(frame, f'Face searching...', (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2)
 
 
-def camera_vission():
+def camera_vision():
     while True:
         ret, frame = camera.read()
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
@@ -53,4 +53,4 @@ def camera_vission():
 
 
 if __name__ == '__main__':
-    camera_vission()
+    camera_vision()
