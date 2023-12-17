@@ -18,7 +18,7 @@ def deviation(faces, frame):
         height = frame.shape[0] / 2
 
         dx = faces_center[0] - width
-        dy = -(faces_center[1] - height)
+        dy = height - faces_center[1]
 
         print(dx, dy)
 
